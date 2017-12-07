@@ -1,0 +1,13 @@
+﻿@page "{name?}"
+
+<div>Hello from RAZOR PAGE .CORE !</div>
+
+@*@inject IGreeter Greeter*@  @*THIS IS NOT GOOD USE MODEL*@
+
+@*<div>@Greeter.GetMessageOfTheDay()</div>*@
+
+@model GreetingModel
+
+<div>@Model.CurrentGreeting</div>
+
+<div>HOUR IS : @DateTime.Now.Minute M @DateTime.Now.Hour H</div>
